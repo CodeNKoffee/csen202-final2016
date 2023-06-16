@@ -8,10 +8,15 @@ public class two {
   }
 
   public static void Arithmetic(int x, int y, String op) {
-    if (op == "+") System.out.println(x +" "+ op +" "+ y +" = "+ (x + y));
-    else if (op == "-") System.out.println(x +" "+ op +" "+ y +" = "+ (x - y));
-    else if (op == "*") System.out.println(x +" "+ op +" "+ y +" = "+ (x * y));
-    else if (op == "/") System.out.println(x +" "+ op +" "+ y +" = "+ (x / y));
-    else System.out.println("Invalid Operation");;
+    if (op.equals("+"))
+      System.out.println(x + " " + op + " " + y + " = " + (x + y));
+    else if (op.equals("-"))
+      System.out.println(x + " " + op + " " + y + " = " + (x - y));
+    else if (op.equals("*"))
+      System.out.println(x + " " + op + " " + y + " = " + (x * y));
+    else if (op.equals("/"))
+      System.out.println(x + " " + op + " " + y + " = " + (x / y));
+    else
+      System.out.println("Invalid Operation");
   }
 }
