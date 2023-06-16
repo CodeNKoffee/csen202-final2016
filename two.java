@@ -7,16 +7,35 @@ public class two {
     Arithmetic(x, y, op);
   }
 
+  // public static void Arithmetic(int x, int y, String op) {
+  //   if (op.equals("+"))
+  //     System.out.println(x + " " + op + " " + y + " = " + (x + y));
+  //   else if (op.equals("-"))
+  //     System.out.println(x + " " + op + " " + y + " = " + (x - y));
+  //   else if (op.equals("*"))
+  //     System.out.println(x + " " + op + " " + y + " = " + (x * y));
+  //   else if (op.equals("/"))
+  //     System.out.println(x + " " + op + " " + y + " = " + (x / y));
+  //   else
+  //     System.out.println("Invalid Operation");
+  // }
   public static void Arithmetic(int x, int y, String op) {
-    if (op.equals("+"))
-      System.out.println(x + " " + op + " " + y + " = " + (x + y));
-    else if (op.equals("-"))
-      System.out.println(x + " " + op + " " + y + " = " + (x - y));
-    else if (op.equals("*"))
-      System.out.println(x + " " + op + " " + y + " = " + (x * y));
-    else if (op.equals("/"))
-      System.out.println(x + " " + op + " " + y + " = " + (x / y));
-    else
+  switch (op) {
+    case "+":
+      System.out.println(x +" "+ op +" "+ y +" = "+ (x + y));
+      break;
+    case "-":
+      System.out.println(x +" "+ op +" "+ y +" = "+ (x - y));
+      break;
+    case "*":
+      System.out.println(x +" "+ op +" "+ y +" = "+ (x * y));
+      break;
+    case "/":
+      System.out.println(x +" "+ op +" "+ y +" = "+ (x / y));
+      break;
+    default:
       System.out.println("Invalid Operation");
   }
+}
+
 }
