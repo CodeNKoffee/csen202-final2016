@@ -20,22 +20,21 @@ public class two {
   //     System.out.println("Invalid Operation");
   // }
   public static void Arithmetic(int x, int y, String op) {
-  switch (op) {
-    case "+":
-      System.out.println(x +" "+ op +" "+ y +" = "+ (x + y));
-      break;
-    case "-":
-      System.out.println(x +" "+ op +" "+ y +" = "+ (x - y));
-      break;
-    case "*":
-      System.out.println(x +" "+ op +" "+ y +" = "+ (x * y));
-      break;
-    case "/":
-      System.out.println(x +" "+ op +" "+ y +" = "+ (x / y));
-      break;
-    default:
-      System.out.println("Invalid Operation");
+    switch (op) {
+      case "+":
+        System.out.println(x +" "+ op +" "+ y +" = "+ (x + y));
+        break;
+      case "-":
+        System.out.println(x +" "+ op +" "+ y +" = "+ (x - y));
+        break;
+      case "*":
+        System.out.println(x +" "+ op +" "+ y +" = "+ (x * y));
+        break;
+      case "/":
+        System.out.println(x +" "+ op +" "+ y +" = "+ (x / y));
+        break;
+      default:
+        System.out.println("Invalid Operation");
+    }
   }
-}
-
 }
